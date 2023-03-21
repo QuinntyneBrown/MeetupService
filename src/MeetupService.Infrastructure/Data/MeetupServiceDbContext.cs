@@ -4,16 +4,19 @@
 using MeetupService.Core;
 using Microsoft.EntityFrameworkCore;
 using MeetupService.Core.AggregatesModel.GroupAggregate;
+using MeetupService.Core.AggregatesModel.MemberAggregate;
 
 namespace MeetupService.Infrastructure.Data;
 
-public class MeetupServiceDbContext: DbContext,IMeetupServiceDbContext
+public class MeetupServiceDbContext: DbContext, IMeetupServiceDbContext
 {
     public MeetupServiceDbContext(DbContextOptions<MeetupServiceDbContext> options)    : base(options)
     {
     }
 
     public DbSet<Group> Groups { get; set; }
+
+    public DbSet<Member> Members { get; private set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
