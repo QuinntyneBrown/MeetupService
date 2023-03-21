@@ -1,4 +1,4 @@
-# Project
+# MeetupService
 
 
 ## Give a Star! :star:
