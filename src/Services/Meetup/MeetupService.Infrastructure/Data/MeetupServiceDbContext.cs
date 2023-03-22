@@ -14,7 +14,7 @@ public class MeetupServiceDbContext: DbContext, IMeetupServiceDbContext
     {
     }
 
-    public DbSet<Group> Groups { get; set; }
+    public DbSet<Group> Groups { get; private set; }
 
     public DbSet<Member> Members { get; private set; }
 

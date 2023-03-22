@@ -7,29 +7,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8A287485-5F3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{5CF14B03-FACD-447A-B5C6-8A2BE2335666}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging", "src\BuildingBlocks\Messaging\Messaging.csproj", "{441A82B4-3636-44FC-9B22-24115FED7C88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messaging", "src\BuildingBlocks\Messaging\Messaging.csproj", "{441A82B4-3636-44FC-9B22-24115FED7C88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.Udp", "src\BuildingBlocks\Messaging.Udp\Messaging.Udp.csproj", "{50179546-98F9-4B2C-A7CC-94BBC772E346}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messaging.Udp", "src\BuildingBlocks\Messaging.Udp\Messaging.Udp.csproj", "{50179546-98F9-4B2C-A7CC-94BBC772E346}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security", "src\BuildingBlocks\Security\Security.csproj", "{169B1246-D8DA-4F6B-B118-701DF8786AEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security", "src\BuildingBlocks\Security\Security.csproj", "{169B1246-D8DA-4F6B-B118-701DF8786AEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kernel", "src\BuildingBlocks\Kernel\Kernel.csproj", "{14B63DCC-A031-4C62-9F11-9F396F39850D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kernel", "src\BuildingBlocks\Kernel\Kernel.csproj", "{14B63DCC-A031-4C62-9F11-9F396F39850D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "src\BuildingBlocks\Validation\Validation.csproj", "{F5A1836C-99A5-48D2-8B3B-BCDF4942CA8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation", "src\BuildingBlocks\Validation\Validation.csproj", "{F5A1836C-99A5-48D2-8B3B-BCDF4942CA8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetupService.Core", "src\MeetupService.Core\MeetupService.Core.csproj", "{B2B18892-4DDD-4944-B298-4DE9E362593B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{EDB660CD-E28D-4C57-96BF-455AD716A7F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetupService.Infrastructure", "src\MeetupService.Infrastructure\MeetupService.Infrastructure.csproj", "{38274ECD-0569-49BE-A120-672DF8D8AA9B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Meetup", "Meetup", "{0CCD53A3-BFF0-4803-90EA-2582806B317D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetupService.Api", "src\MeetupService.Api\MeetupService.Api.csproj", "{008FEBDC-D2B6-4855-A586-860404E1F1D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetupService.Api", "src\Services\Meetup\MeetupService.Api\MeetupService.Api.csproj", "{B0B2284D-5907-415B-862C-5468021A98D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetupService.Core", "src\Services\Meetup\MeetupService.Core\MeetupService.Core.csproj", "{5BC8078E-D1DB-4F28-879C-6D5F6A52C0C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetupService.Infrastructure", "src\Services\Meetup\MeetupService.Infrastructure\MeetupService.Infrastructure.csproj", "{9CDEA79D-094F-4511-BC92-89B7673E8CF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{441A82B4-3636-44FC-9B22-24115FED7C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -52,18 +53,21 @@ Global
 		{F5A1836C-99A5-48D2-8B3B-BCDF4942CA8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5A1836C-99A5-48D2-8B3B-BCDF4942CA8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5A1836C-99A5-48D2-8B3B-BCDF4942CA8A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B2B18892-4DDD-4944-B298-4DE9E362593B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2B18892-4DDD-4944-B298-4DE9E362593B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2B18892-4DDD-4944-B298-4DE9E362593B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2B18892-4DDD-4944-B298-4DE9E362593B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{38274ECD-0569-49BE-A120-672DF8D8AA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38274ECD-0569-49BE-A120-672DF8D8AA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38274ECD-0569-49BE-A120-672DF8D8AA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38274ECD-0569-49BE-A120-672DF8D8AA9B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{008FEBDC-D2B6-4855-A586-860404E1F1D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{008FEBDC-D2B6-4855-A586-860404E1F1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{008FEBDC-D2B6-4855-A586-860404E1F1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{008FEBDC-D2B6-4855-A586-860404E1F1D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B2284D-5907-415B-862C-5468021A98D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B2284D-5907-415B-862C-5468021A98D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B2284D-5907-415B-862C-5468021A98D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B2284D-5907-415B-862C-5468021A98D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BC8078E-D1DB-4F28-879C-6D5F6A52C0C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC8078E-D1DB-4F28-879C-6D5F6A52C0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC8078E-D1DB-4F28-879C-6D5F6A52C0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC8078E-D1DB-4F28-879C-6D5F6A52C0C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CDEA79D-094F-4511-BC92-89B7673E8CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDEA79D-094F-4511-BC92-89B7673E8CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDEA79D-094F-4511-BC92-89B7673E8CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDEA79D-094F-4511-BC92-89B7673E8CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5CF14B03-FACD-447A-B5C6-8A2BE2335666} = {8A287485-5F30-4EF7-942A-DE6BB41DF37E}
@@ -72,8 +76,10 @@ Global
 		{169B1246-D8DA-4F6B-B118-701DF8786AEA} = {5CF14B03-FACD-447A-B5C6-8A2BE2335666}
 		{14B63DCC-A031-4C62-9F11-9F396F39850D} = {5CF14B03-FACD-447A-B5C6-8A2BE2335666}
 		{F5A1836C-99A5-48D2-8B3B-BCDF4942CA8A} = {5CF14B03-FACD-447A-B5C6-8A2BE2335666}
-		{B2B18892-4DDD-4944-B298-4DE9E362593B} = {8A287485-5F30-4EF7-942A-DE6BB41DF37E}
-		{38274ECD-0569-49BE-A120-672DF8D8AA9B} = {8A287485-5F30-4EF7-942A-DE6BB41DF37E}
-		{008FEBDC-D2B6-4855-A586-860404E1F1D4} = {8A287485-5F30-4EF7-942A-DE6BB41DF37E}
+		{EDB660CD-E28D-4C57-96BF-455AD716A7F2} = {8A287485-5F30-4EF7-942A-DE6BB41DF37E}
+		{0CCD53A3-BFF0-4803-90EA-2582806B317D} = {EDB660CD-E28D-4C57-96BF-455AD716A7F2}
+		{B0B2284D-5907-415B-862C-5468021A98D0} = {0CCD53A3-BFF0-4803-90EA-2582806B317D}
+		{5BC8078E-D1DB-4F28-879C-6D5F6A52C0C2} = {0CCD53A3-BFF0-4803-90EA-2582806B317D}
+		{9CDEA79D-094F-4511-BC92-89B7673E8CF3} = {0CCD53A3-BFF0-4803-90EA-2582806B317D}
 	EndGlobalSection
 EndGlobal

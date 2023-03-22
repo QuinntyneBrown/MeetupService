@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BuildingBlocks\Kernel\Kernel.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Kernel\Kernel.csproj" />
   </ItemGroup>
 
 </Project>
